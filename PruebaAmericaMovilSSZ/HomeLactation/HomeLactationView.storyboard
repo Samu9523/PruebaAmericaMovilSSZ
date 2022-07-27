@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="IPv-lu-Uai">
+            <objects>
+                <navigationController storyboardIdentifier="navigation" id="Vjv-6n-tIM" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KII-VS-Wp6">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="Stm-eu-Jrg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hd1-HK-Jna" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-771" y="129"/>
+        </scene>
+        <!--Home Lactation View-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="HomeLactationView" id="Y6W-OH-hqX" customClass="HomeLactationView" customModule="PruebaAmericaMovilSSZ" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="IaM-Fq-pKj">
+                                <rect key="frame" x="118" y="35" width="178" height="178"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" secondItem="IaM-Fq-pKj" secondAttribute="width" id="VCM-fa-2K5"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MyBaby" translatesAutoresizingMaskIntoConstraints="NO" id="gel-mp-cWx">
+                                <rect key="frame" x="58.666666666666671" y="243" width="136.66666666666663" height="136.66666666666663"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" secondItem="gel-mp-cWx" secondAttribute="width" id="Shg-Wy-vA9"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HowToLactate" translatesAutoresizingMaskIntoConstraints="NO" id="tkn-Mr-ZQz">
+                                <rect key="frame" x="218.66666666666669" y="243" width="136.66666666666669" height="136.66666666666663"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" secondItem="tkn-Mr-ZQz" secondAttribute="width" id="XwF-TA-ejS"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Problems" translatesAutoresizingMaskIntoConstraints="NO" id="sWe-Oa-shd">
+                                <rect key="frame" x="58.666666666666671" y="422.66666666666669" width="136.66666666666663" height="136.66666666666669"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" secondItem="sWe-Oa-shd" secondAttribute="width" id="Gcm-tv-M6G"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Suggestions" translatesAutoresizingMaskIntoConstraints="NO" id="bIa-uG-v6v">
+                                <rect key="frame" x="218.66666666666669" y="422.66666666666669" width="136.66666666666669" height="136.66666666666669"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" secondItem="bIa-uG-v6v" secondAttribute="width" id="APs-lm-e8L"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Cómo lactar?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C9W-3Q-sB5">
+                                <rect key="frame" x="237.66666666666663" y="384.66666666666669" width="99" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.37651014820000001" green="0.37651014820000001" blue="0.37651014820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Problemas?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i7r-8A-tEt">
+                                <rect key="frame" x="83" y="564.33333333333337" width="88" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.37651014820000001" green="0.37651014820000001" blue="0.37651014820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sugerencias" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lpg-IS-OCi">
+                                <rect key="frame" x="244.66666666666663" y="564.33333333333337" width="85" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.37651014820000001" green="0.37651014820000001" blue="0.37651014820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mi Bebé" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ssC-HH-XRL">
+                                <rect key="frame" x="99" y="384.66666666666669" width="56" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.37651014820000001" green="0.37651014820000001" blue="0.37651014820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                        <constraints>
+                            <constraint firstItem="IaM-Fq-pKj" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="0IL-hu-XBG"/>
+                            <constraint firstItem="i7r-8A-tEt" firstAttribute="centerX" secondItem="sWe-Oa-shd" secondAttribute="centerX" id="24U-5g-z1f"/>
+                            <constraint firstItem="sWe-Oa-shd" firstAttribute="leading" secondItem="gel-mp-cWx" secondAttribute="leading" id="6QL-kB-afI"/>
+                            <constraint firstItem="ssC-HH-XRL" firstAttribute="centerX" secondItem="gel-mp-cWx" secondAttribute="centerX" id="6nH-sh-cbE"/>
+                            <constraint firstItem="tkn-Mr-ZQz" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.33" id="BHp-L3-toN"/>
+                            <constraint firstItem="bIa-uG-v6v" firstAttribute="top" secondItem="C9W-3Q-sB5" secondAttribute="bottom" constant="20" id="CiV-nG-OHb"/>
+                            <constraint firstItem="gel-mp-cWx" firstAttribute="top" secondItem="IaM-Fq-pKj" secondAttribute="bottom" constant="30" id="Dv6-WP-tkg"/>
+                            <constraint firstItem="gel-mp-cWx" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.33" id="Qud-PU-M3b"/>
+                            <constraint firstItem="Lpg-IS-OCi" firstAttribute="centerX" secondItem="bIa-uG-v6v" secondAttribute="centerX" id="RR3-8M-gX4"/>
+                            <constraint firstItem="gel-mp-cWx" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" constant="-80" id="T4t-KU-yLJ"/>
+                            <constraint firstItem="sWe-Oa-shd" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.33" id="U0B-cW-h9Y"/>
+                            <constraint firstItem="C9W-3Q-sB5" firstAttribute="centerX" secondItem="tkn-Mr-ZQz" secondAttribute="centerX" id="WBq-El-lD6"/>
+                            <constraint firstItem="i7r-8A-tEt" firstAttribute="top" secondItem="sWe-Oa-shd" secondAttribute="bottom" constant="5" id="cwu-9M-Ks9"/>
+                            <constraint firstItem="C9W-3Q-sB5" firstAttribute="top" secondItem="tkn-Mr-ZQz" secondAttribute="bottom" constant="5" id="czp-cO-jgX"/>
+                            <constraint firstItem="sWe-Oa-shd" firstAttribute="top" secondItem="ssC-HH-XRL" secondAttribute="bottom" constant="20" id="fzi-C9-hH0"/>
+                            <constraint firstItem="tkn-Mr-ZQz" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" constant="80" id="gVD-oD-EzC"/>
+                            <constraint firstItem="IaM-Fq-pKj" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.43" id="lt2-2K-NnL"/>
+                            <constraint firstItem="bIa-uG-v6v" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.33" id="mzR-zu-R7C"/>
+                            <constraint firstItem="Lpg-IS-OCi" firstAttribute="top" secondItem="bIa-uG-v6v" secondAttribute="bottom" constant="5" id="owF-oe-ZMN"/>
+                            <constraint firstItem="tkn-Mr-ZQz" firstAttribute="top" secondItem="IaM-Fq-pKj" secondAttribute="bottom" constant="30" id="pbg-3Z-tGd"/>
+                            <constraint firstItem="IaM-Fq-pKj" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="35" id="pxQ-07-8jR"/>
+                            <constraint firstItem="ssC-HH-XRL" firstAttribute="top" secondItem="gel-mp-cWx" secondAttribute="bottom" constant="5" id="y9t-jp-5g9"/>
+                            <constraint firstItem="bIa-uG-v6v" firstAttribute="trailing" secondItem="tkn-Mr-ZQz" secondAttribute="trailing" id="z0m-QP-tKO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZBW-oq-wpa"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="121.73913043478262" y="128.57142857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="HowToLactate" width="179" height="179"/>
+        <image name="Logo" width="175" height="274"/>
+        <image name="MyBaby" width="179" height="179"/>
+        <image name="Problems" width="179" height="179"/>
+        <image name="Suggestions" width="179" height="179"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
