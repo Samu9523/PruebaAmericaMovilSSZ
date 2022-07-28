@@ -16,7 +16,7 @@ protocol FormMyBabyViewProtocol: AnyObject {
 
 protocol FormMyBabyWireFrameProtocol: AnyObject {
     // PRESENTER -> WIREFRAME
-    static func createFormMyBabyModule() -> UIViewController
+    static func createFormMyBaby() -> UIViewController
 }
 
 protocol FormMyBabyPresenterProtocol: AnyObject {
@@ -30,4 +30,5 @@ protocol FormMyBabyPresenterProtocol: AnyObject {
 
 protocol FormMyBabyInteractorProtocol: AnyObject {
 // INTERACTOR -> PRESENTER
+    var presenter: FormMyBabyPresenterProtocol? {get set}
 }

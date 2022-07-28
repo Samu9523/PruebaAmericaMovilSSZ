@@ -12,7 +12,7 @@ import UIKit
 class HomeLactationView: UIViewController {
 
     @IBOutlet weak var lactationLogoImage: UIImageView!
-    @IBOutlet weak var myBabyImage: UIImageView!
+    @IBOutlet weak var myBabyBUtton: UIButton!
     @IBOutlet weak var myBabyLabel: UILabel!
     @IBOutlet weak var howToLactateImage: UIImageView!
     @IBOutlet weak var howToLactateLabel: UILabel!
@@ -20,14 +20,20 @@ class HomeLactationView: UIViewController {
     @IBOutlet weak var problemsLabel: UILabel!
     @IBOutlet weak var suggestionsImage: UIImageView!
     @IBOutlet weak var suggestionsLabel: UILabel!
+    
+    @IBAction func myBabyButtonAction(_ sender: UIButton) {
+        presenter?.showMyBabyForm()
+    }
+    
     // MARK: Properties
     var presenter: HomeLactationPresenterProtocol?
-    
     // MARK: Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter?.viewDidLoad()
+    }
+    func clickOnMyBaby(){
     }
 }
 

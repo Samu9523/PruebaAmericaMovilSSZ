@@ -17,6 +17,7 @@ protocol HomeLactationViewProtocol: AnyObject {
 protocol HomeLactationWireFrameProtocol: AnyObject {
     // PRESENTER -> WIREFRAME
     static func createHomeLactationModule() -> UIViewController
+    func presentFormView(from view: HomeLactationViewProtocol)
 }
 
 protocol HomeLactationPresenterProtocol: AnyObject {
@@ -26,12 +27,13 @@ protocol HomeLactationPresenterProtocol: AnyObject {
     var wireFrame: HomeLactationWireFrameProtocol? { get set }
     
     func viewDidLoad()
+    func showMyBabyForm()
 }
 
 
 protocol HomeLactationInteractorProtocol: AnyObject {
     // PRESENTER -> INTERACTOR
-    var presenter: HomeLactationInteractorProtocol? { get set }
+    var presenter: HomeLactationPresenterProtocol? {get set}
 }
 
 

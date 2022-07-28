@@ -9,6 +9,8 @@
 import Foundation
 
 class FormMyBabyInteractor: FormMyBabyInteractorProtocol {
+    var presenter: FormMyBabyPresenterProtocol?
+    
 
     // MARK: Properties
 }

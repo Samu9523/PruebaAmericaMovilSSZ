@@ -18,7 +18,13 @@ class HomeLactationPresenter  {
 }
 
 extension HomeLactationPresenter: HomeLactationPresenterProtocol {
+    
     // TODO: implement presenter methods
     func viewDidLoad() {
     }
+    
+    func showMyBabyForm() {
+        wireFrame?.presentFormView(from: view!)
+    }
+    
 }
