@@ -11,6 +11,15 @@ import UIKit
 
 class HomeLactationView: UIViewController {
 
+    @IBOutlet weak var lactationLogoImage: UIImageView!
+    @IBOutlet weak var myBabyImage: UIImageView!
+    @IBOutlet weak var myBabyLabel: UILabel!
+    @IBOutlet weak var howToLactateImage: UIImageView!
+    @IBOutlet weak var howToLactateLabel: UILabel!
+    @IBOutlet weak var problemsImage: UIImageView!
+    @IBOutlet weak var problemsLabel: UILabel!
+    @IBOutlet weak var suggestionsImage: UIImageView!
+    @IBOutlet weak var suggestionsLabel: UILabel!
     // MARK: Properties
     var presenter: HomeLactationPresenterProtocol?
     

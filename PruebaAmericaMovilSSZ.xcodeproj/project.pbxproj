@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC1B9799289239CB001E787A /* FormMyBabyView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC1B9798289239CB001E787A /* FormMyBabyView.storyboard */; };
 		FCBB64F12891AA64004664C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBB64F02891AA64004664C9 /* AppDelegate.swift */; };
 		FCBB64F32891AA64004664C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBB64F22891AA64004664C9 /* SceneDelegate.swift */; };
 		FCBB64FB2891AA64004664C9 /* PruebaAmericaMovilSSZ.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FCBB64F92891AA64004664C9 /* PruebaAmericaMovilSSZ.xcdatamodeld */; };
@@ -22,11 +23,11 @@
 		FCBB65212891AD3F004664C9 /* FormMyBabyInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBB651A2891AD3F004664C9 /* FormMyBabyInteractor.swift */; };
 		FCBB65222891AD3F004664C9 /* FormMyBabyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBB651B2891AD3F004664C9 /* FormMyBabyView.swift */; };
 		FCBB65242891AD3F004664C9 /* FormMyBabyWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBB651D2891AD3F004664C9 /* FormMyBabyWireFrame.swift */; };
-		FCBB65262891AD75004664C9 /* FormMyBabyView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCBB65252891AD75004664C9 /* FormMyBabyView.storyboard */; };
 		FCBB65282891AD90004664C9 /* HomeLactationView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCBB65272891AD90004664C9 /* HomeLactationView.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FC1B9798289239CB001E787A /* FormMyBabyView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FormMyBabyView.storyboard; sourceTree = "<group>"; };
 		FCBB64ED2891AA64004664C9 /* PruebaAmericaMovilSSZ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PruebaAmericaMovilSSZ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCBB64F02891AA64004664C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCBB64F22891AA64004664C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,7 +45,6 @@
 		FCBB651A2891AD3F004664C9 /* FormMyBabyInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormMyBabyInteractor.swift; sourceTree = "<group>"; };
 		FCBB651B2891AD3F004664C9 /* FormMyBabyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormMyBabyView.swift; sourceTree = "<group>"; };
 		FCBB651D2891AD3F004664C9 /* FormMyBabyWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormMyBabyWireFrame.swift; sourceTree = "<group>"; };
-		FCBB65252891AD75004664C9 /* FormMyBabyView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FormMyBabyView.storyboard; sourceTree = "<group>"; };
 		FCBB65272891AD90004664C9 /* HomeLactationView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeLactationView.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,7 +110,7 @@
 				FCBB65192891AD3F004664C9 /* FormMyBabyProtocols.swift */,
 				FCBB651A2891AD3F004664C9 /* FormMyBabyInteractor.swift */,
 				FCBB651B2891AD3F004664C9 /* FormMyBabyView.swift */,
-				FCBB65252891AD75004664C9 /* FormMyBabyView.storyboard */,
+				FC1B9798289239CB001E787A /* FormMyBabyView.storyboard */,
 				FCBB651D2891AD3F004664C9 /* FormMyBabyWireFrame.swift */,
 			);
 			path = FormMyBaby;
@@ -177,7 +177,7 @@
 				FCBB65002891AA65004664C9 /* LaunchScreen.storyboard in Resources */,
 				FCBB64FD2891AA65004664C9 /* Assets.xcassets in Resources */,
 				FCBB65282891AD90004664C9 /* HomeLactationView.storyboard in Resources */,
-				FCBB65262891AD75004664C9 /* FormMyBabyView.storyboard in Resources */,
+				FC1B9799289239CB001E787A /* FormMyBabyView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
