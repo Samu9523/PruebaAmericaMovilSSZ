@@ -20,9 +20,14 @@ class HomeLactationView: UIViewController {
     @IBOutlet weak var problemsLabel: UILabel!
     @IBOutlet weak var suggestionsImage: UIImageView!
     @IBOutlet weak var suggestionsLabel: UILabel!
+    @IBOutlet weak var infoButton: UIButton!
+    
     
     @IBAction func myBabyButtonAction(_ sender: UIButton) {
         presenter?.showMyBabyForm()
+    }
+    @IBAction func infoButtonAction(_ sender: Any) {
+        presenter?.showInfo()
     }
     
     // MARK: Properties

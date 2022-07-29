@@ -10,7 +10,6 @@ import Foundation
 import UIKit
 
 class HomeLactationWireFrame: HomeLactationWireFrameProtocol {
-    
 
     static func createHomeLactationModule() -> UIViewController {
         let navController = mainStoryboard.instantiateViewController(withIdentifier: "navigation")
@@ -18,12 +17,10 @@ class HomeLactationWireFrame: HomeLactationWireFrameProtocol {
             let presenter = HomeLactationPresenter()
             let interactor = HomeLactationInteractor()
             let wireFrame = HomeLactationWireFrame()
-
             view.presenter = presenter
             presenter.view = view
             presenter.wireFrame = wireFrame
             presenter.interactor = interactor
-            
             return navController
         }
         return UIViewController()
@@ -38,6 +35,10 @@ class HomeLactationWireFrame: HomeLactationWireFrameProtocol {
             newView.navigationController?.pushViewController(nextView, animated: true)
         }
     }
-    
-    
+    func presentNewsView(from view: HomeLactationViewProtocol) {
+        let nextViewNews = NewsLactationWireFrame.createNewsLactationModule()
+        if let newViewInfo = view as? UIViewController{
+            newViewInfo.navigationController?.pushViewController(nextViewNews, animated: true)
+        }
+    }
 }

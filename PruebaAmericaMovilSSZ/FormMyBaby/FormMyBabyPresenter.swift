@@ -32,9 +32,11 @@ extension FormMyBabyPresenter: FormMyBabyPresenterProtocol {
     func cleanInfo() {
         view?.cleanButtonInfo()
     }
-    func saveInfoBaby() {
-        <#code#>
+    func saveDataBaby() {
+        view?.saveInfoBaby()
     }
-    
+    func editAvatarbaby() {
+        view?.chooseAvatar()
+    }
 }
 

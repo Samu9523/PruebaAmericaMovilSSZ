@@ -18,6 +18,7 @@ protocol HomeLactationWireFrameProtocol: AnyObject {
     // PRESENTER -> WIREFRAME
     static func createHomeLactationModule() -> UIViewController
     func presentFormView(from view: HomeLactationViewProtocol)
+    func presentNewsView(from view: HomeLactationViewProtocol)
 }
 
 protocol HomeLactationPresenterProtocol: AnyObject {
@@ -28,6 +29,7 @@ protocol HomeLactationPresenterProtocol: AnyObject {
     
     func viewDidLoad()
     func showMyBabyForm()
+    func showInfo()
 }
 
 

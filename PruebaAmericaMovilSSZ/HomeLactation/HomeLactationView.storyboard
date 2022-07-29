@@ -7,22 +7,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
-        <scene sceneID="IPv-lu-Uai">
-            <objects>
-                <navigationController storyboardIdentifier="navigation" id="Vjv-6n-tIM" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KII-VS-Wp6">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="Stm-eu-Jrg"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Hd1-HK-Jna" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-771" y="129"/>
-        </scene>
         <!--Home Lactation View-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
@@ -94,21 +78,37 @@
                                     <action selector="myBabyButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="kgE-Ir-hq6"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jGA-X9-vN6">
+                                <rect key="frame" x="30" y="88" width="33" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" secondItem="jGA-X9-vN6" secondAttribute="width" id="GWy-sC-VO7"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="">
+                                    <backgroundConfiguration key="background" image="Info"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="infoButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="91L-WN-g7o"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" red="0.8784313725490196" green="0.8784313725490196" blue="0.83137254901960778" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="IaM-Fq-pKj" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="0IL-hu-XBG"/>
+                            <constraint firstItem="jGA-X9-vN6" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.08" id="1z4-oN-27p"/>
                             <constraint firstItem="i7r-8A-tEt" firstAttribute="centerX" secondItem="sWe-Oa-shd" secondAttribute="centerX" id="24U-5g-z1f"/>
                             <constraint firstItem="sWe-Oa-shd" firstAttribute="leading" secondItem="HCS-yk-Rkn" secondAttribute="leading" id="Alk-My-RM5"/>
                             <constraint firstItem="tkn-Mr-ZQz" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.33" id="BHp-L3-toN"/>
                             <constraint firstItem="bIa-uG-v6v" firstAttribute="top" secondItem="C9W-3Q-sB5" secondAttribute="bottom" constant="20" id="CiV-nG-OHb"/>
                             <constraint firstItem="HCS-yk-Rkn" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.33" id="Fa9-MG-5Zw"/>
+                            <constraint firstItem="jGA-X9-vN6" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="R1t-Fc-MML"/>
                             <constraint firstItem="Lpg-IS-OCi" firstAttribute="centerX" secondItem="bIa-uG-v6v" secondAttribute="centerX" id="RR3-8M-gX4"/>
                             <constraint firstItem="sWe-Oa-shd" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.33" id="U0B-cW-h9Y"/>
                             <constraint firstItem="ssC-HH-XRL" firstAttribute="top" secondItem="HCS-yk-Rkn" secondAttribute="bottom" constant="5" id="USf-ns-QNe"/>
                             <constraint firstItem="C9W-3Q-sB5" firstAttribute="centerX" secondItem="tkn-Mr-ZQz" secondAttribute="centerX" id="WBq-El-lD6"/>
                             <constraint firstItem="ssC-HH-XRL" firstAttribute="centerX" secondItem="HCS-yk-Rkn" secondAttribute="centerX" id="ZB4-Fg-Wbc"/>
+                            <constraint firstItem="jGA-X9-vN6" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="cPu-ST-0t5"/>
                             <constraint firstItem="i7r-8A-tEt" firstAttribute="top" secondItem="sWe-Oa-shd" secondAttribute="bottom" constant="5" id="cwu-9M-Ks9"/>
                             <constraint firstItem="C9W-3Q-sB5" firstAttribute="top" secondItem="tkn-Mr-ZQz" secondAttribute="bottom" constant="5" id="czp-cO-jgX"/>
                             <constraint firstItem="sWe-Oa-shd" firstAttribute="top" secondItem="ssC-HH-XRL" secondAttribute="bottom" constant="20" id="fzi-C9-hH0"/>
@@ -127,6 +127,7 @@
                     <connections>
                         <outlet property="howToLactateImage" destination="tkn-Mr-ZQz" id="Znm-yo-Avg"/>
                         <outlet property="howToLactateLabel" destination="C9W-3Q-sB5" id="QUa-Sh-Dmk"/>
+                        <outlet property="infoButton" destination="jGA-X9-vN6" id="6yF-wU-V2o"/>
                         <outlet property="lactationLogoImage" destination="IaM-Fq-pKj" id="vSI-c5-SVN"/>
                         <outlet property="myBabyBUtton" destination="HCS-yk-Rkn" id="KQ6-vF-8zT"/>
                         <outlet property="myBabyLabel" destination="ssC-HH-XRL" id="cS5-ND-NqO"/>
@@ -138,11 +139,30 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1031.8840579710145" y="128.57142857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Qs0-Ec-hSg">
+            <objects>
+                <navigationController storyboardIdentifier="navigation" automaticallyAdjustsScrollViewInsets="NO" id="OjL-H3-CGK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xsW-E2-VHk">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="Nj0-z5-UgJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BFF-Wi-R2r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
             <point key="canvasLocation" x="121.73913043478262" y="128.57142857142856"/>
         </scene>
     </scenes>
     <resources>
         <image name="HowToLactate" width="179" height="179"/>
+        <image name="Info" width="40" height="40"/>
         <image name="Logo" width="175" height="274"/>
         <image name="MyBaby" width="179" height="179"/>
         <image name="Problems" width="179" height="179"/>

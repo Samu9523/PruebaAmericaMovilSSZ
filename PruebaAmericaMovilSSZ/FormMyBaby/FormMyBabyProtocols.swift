@@ -17,6 +17,10 @@ protocol FormMyBabyViewProtocol: AnyObject {
     func chooseBoy()
     func cleanButtonInfo()
     func saveInfoBaby()
+    func deleteItem(item: BabyForm)
+    func chooseAvatar()
+    func cameraButton()
+    func albumButton()
 }
 
 protocol FormMyBabyWireFrameProtocol: AnyObject {
@@ -34,7 +38,8 @@ protocol FormMyBabyPresenterProtocol: AnyObject {
     func buttonGirl()
     func buttonBoy()
     func cleanInfo()
-    func saveInfoBaby()
+    func saveDataBaby()
+    func editAvatarbaby()
 }
 
 protocol FormMyBabyInteractorProtocol: AnyObject {

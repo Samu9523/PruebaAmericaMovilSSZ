@@ -10,8 +10,4 @@ import Foundation
 
 class HomeLactationInteractor: HomeLactationInteractorProtocol {
     var presenter: HomeLactationPresenterProtocol?
-    
-    func myBabyAction() {
-        
-    }
 }

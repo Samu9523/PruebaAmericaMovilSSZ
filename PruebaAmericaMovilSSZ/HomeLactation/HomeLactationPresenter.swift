@@ -14,7 +14,6 @@ class HomeLactationPresenter  {
     weak var view: HomeLactationViewProtocol?
     var interactor: HomeLactationInteractorProtocol?
     var wireFrame: HomeLactationWireFrameProtocol?
-    
 }
 
 extension HomeLactationPresenter: HomeLactationPresenterProtocol {
@@ -26,5 +25,7 @@ extension HomeLactationPresenter: HomeLactationPresenterProtocol {
     func showMyBabyForm() {
         wireFrame?.presentFormView(from: view!)
     }
-    
+    func showInfo() {
+        wireFrame?.presentNewsView(from: view!)
+    }
 }

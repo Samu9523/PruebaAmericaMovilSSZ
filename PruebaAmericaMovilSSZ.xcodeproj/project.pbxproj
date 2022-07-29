@@ -12,6 +12,15 @@
 		FC1B979E28933C38001E787A /* PruebaAmericaMovilSSZ.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC1B979C28933C38001E787A /* PruebaAmericaMovilSSZ.xcdatamodeld */; };
 		FC1B97A1289396A9001E787A /* BabyForm+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1B979F289396A9001E787A /* BabyForm+CoreDataClass.swift */; };
 		FC1B97A2289396A9001E787A /* BabyForm+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1B97A0289396A9001E787A /* BabyForm+CoreDataProperties.swift */; };
+		FC1B97AF2893E2C8001E787A /* NewsLactationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1B97A82893E2C8001E787A /* NewsLactationPresenter.swift */; };
+		FC1B97B12893E2C8001E787A /* NewsLactationProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1B97AA2893E2C8001E787A /* NewsLactationProtocols.swift */; };
+		FC1B97B22893E2C8001E787A /* NewsLactationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1B97AB2893E2C8001E787A /* NewsLactationInteractor.swift */; };
+		FC1B97B32893E2C8001E787A /* NewsLactationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1B97AC2893E2C8001E787A /* NewsLactationView.swift */; };
+		FC1B97B52893E2C8001E787A /* NewsLactationWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1B97AE2893E2C8001E787A /* NewsLactationWireFrame.swift */; };
+		FC1B97B72893E37B001E787A /* NewsLactationView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC1B97B62893E37B001E787A /* NewsLactationView.storyboard */; };
+		FC1B97B92893EAD2001E787A /* NewsLactationEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1B97B82893EAD2001E787A /* NewsLactationEntity.swift */; };
+		FC1B97C32894718E001E787A /* NewsLactationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1B97C12894718E001E787A /* NewsLactationTableViewCell.swift */; };
+		FC1B97C42894718E001E787A /* NewsLactationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC1B97C22894718E001E787A /* NewsLactationTableViewCell.xib */; };
 		FCBB64F12891AA64004664C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBB64F02891AA64004664C9 /* AppDelegate.swift */; };
 		FCBB64F32891AA64004664C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBB64F22891AA64004664C9 /* SceneDelegate.swift */; };
 		FCBB64FD2891AA65004664C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCBB64FC2891AA65004664C9 /* Assets.xcassets */; };
@@ -35,6 +44,15 @@
 		FC1B979D28933C38001E787A /* PruebaAmericaMovilSSZ.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PruebaAmericaMovilSSZ.xcdatamodel; sourceTree = "<group>"; };
 		FC1B979F289396A9001E787A /* BabyForm+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BabyForm+CoreDataClass.swift"; sourceTree = "<group>"; };
 		FC1B97A0289396A9001E787A /* BabyForm+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BabyForm+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FC1B97A82893E2C8001E787A /* NewsLactationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsLactationPresenter.swift; sourceTree = "<group>"; };
+		FC1B97AA2893E2C8001E787A /* NewsLactationProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsLactationProtocols.swift; sourceTree = "<group>"; };
+		FC1B97AB2893E2C8001E787A /* NewsLactationInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsLactationInteractor.swift; sourceTree = "<group>"; };
+		FC1B97AC2893E2C8001E787A /* NewsLactationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsLactationView.swift; sourceTree = "<group>"; };
+		FC1B97AE2893E2C8001E787A /* NewsLactationWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsLactationWireFrame.swift; sourceTree = "<group>"; };
+		FC1B97B62893E37B001E787A /* NewsLactationView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewsLactationView.storyboard; sourceTree = "<group>"; };
+		FC1B97B82893EAD2001E787A /* NewsLactationEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsLactationEntity.swift; sourceTree = "<group>"; };
+		FC1B97C12894718E001E787A /* NewsLactationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsLactationTableViewCell.swift; sourceTree = "<group>"; };
+		FC1B97C22894718E001E787A /* NewsLactationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsLactationTableViewCell.xib; sourceTree = "<group>"; };
 		FCBB64ED2891AA64004664C9 /* PruebaAmericaMovilSSZ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PruebaAmericaMovilSSZ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCBB64F02891AA64004664C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCBB64F22891AA64004664C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +92,30 @@
 			path = BabyFormCoreData;
 			sourceTree = "<group>";
 		};
+		FC1B97A72893E28B001E787A /* NewsLactation */ = {
+			isa = PBXGroup;
+			children = (
+				FC1B97C02894716F001E787A /* Cell */,
+				FC1B97A82893E2C8001E787A /* NewsLactationPresenter.swift */,
+				FC1B97AA2893E2C8001E787A /* NewsLactationProtocols.swift */,
+				FC1B97AB2893E2C8001E787A /* NewsLactationInteractor.swift */,
+				FC1B97AC2893E2C8001E787A /* NewsLactationView.swift */,
+				FC1B97B62893E37B001E787A /* NewsLactationView.storyboard */,
+				FC1B97AE2893E2C8001E787A /* NewsLactationWireFrame.swift */,
+				FC1B97B82893EAD2001E787A /* NewsLactationEntity.swift */,
+			);
+			path = NewsLactation;
+			sourceTree = "<group>";
+		};
+		FC1B97C02894716F001E787A /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FC1B97C12894718E001E787A /* NewsLactationTableViewCell.swift */,
+				FC1B97C22894718E001E787A /* NewsLactationTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		FCBB64E42891AA64004664C9 = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +137,7 @@
 			children = (
 				FCBB65152891ACA0004664C9 /* HomeLactation */,
 				FCBB65162891ACB8004664C9 /* FormMyBaby */,
+				FC1B97A72893E28B001E787A /* NewsLactation */,
 				FC1B97A3289396F4001E787A /* BabyFormCoreData */,
 				FCBB64F02891AA64004664C9 /* AppDelegate.swift */,
 				FCBB64F22891AA64004664C9 /* SceneDelegate.swift */,
@@ -192,8 +235,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCBB65002891AA65004664C9 /* LaunchScreen.storyboard in Resources */,
+				FC1B97B72893E37B001E787A /* NewsLactationView.storyboard in Resources */,
 				FCBB64FD2891AA65004664C9 /* Assets.xcassets in Resources */,
 				FCBB65282891AD90004664C9 /* HomeLactationView.storyboard in Resources */,
+				FC1B97C42894718E001E787A /* NewsLactationTableViewCell.xib in Resources */,
 				FC1B9799289239CB001E787A /* FormMyBabyView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -205,15 +250,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC1B97C32894718E001E787A /* NewsLactationTableViewCell.swift in Sources */,
+				FC1B97AF2893E2C8001E787A /* NewsLactationPresenter.swift in Sources */,
 				FCBB65102891AC91004664C9 /* HomeLactationProtocols.swift in Sources */,
 				FC1B97A1289396A9001E787A /* BabyForm+CoreDataClass.swift in Sources */,
 				FCBB65242891AD3F004664C9 /* FormMyBabyWireFrame.swift in Sources */,
+				FC1B97B32893E2C8001E787A /* NewsLactationView.swift in Sources */,
 				FCBB65222891AD3F004664C9 /* FormMyBabyView.swift in Sources */,
 				FCBB65122891AC91004664C9 /* HomeLactationView.swift in Sources */,
+				FC1B97B12893E2C8001E787A /* NewsLactationProtocols.swift in Sources */,
 				FC1B979E28933C38001E787A /* PruebaAmericaMovilSSZ.xcdatamodeld in Sources */,
 				FCBB651E2891AD3F004664C9 /* FormMyBabyPresenter.swift in Sources */,
 				FCBB65202891AD3F004664C9 /* FormMyBabyProtocols.swift in Sources */,
 				FC1B979B289318BF001E787A /* FormMyBabyEntity.swift in Sources */,
+				FC1B97B52893E2C8001E787A /* NewsLactationWireFrame.swift in Sources */,
+				FC1B97B92893EAD2001E787A /* NewsLactationEntity.swift in Sources */,
+				FC1B97B22893E2C8001E787A /* NewsLactationInteractor.swift in Sources */,
 				FCBB65212891AD3F004664C9 /* FormMyBabyInteractor.swift in Sources */,
 				FCBB65112891AC91004664C9 /* HomeLactationInteractor.swift in Sources */,
 				FC1B97A2289396A9001E787A /* BabyForm+CoreDataProperties.swift in Sources */,
