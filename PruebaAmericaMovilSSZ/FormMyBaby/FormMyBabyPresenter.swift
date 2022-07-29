@@ -18,8 +18,23 @@ class FormMyBabyPresenter  {
 }
 
 extension FormMyBabyPresenter: FormMyBabyPresenterProtocol {
+    
     // TODO: implement presenter methods
     func viewDidLoad() {
+        view?.uiCustomization()
     }
+    func buttonGirl() {
+        view?.chooseGirl()
+    }
+    func buttonBoy() {
+        view?.chooseBoy()
+    }
+    func cleanInfo() {
+        view?.cleanButtonInfo()
+    }
+    func saveInfoBaby() {
+        <#code#>
+    }
+    
 }
 

@@ -33,8 +33,6 @@ class HomeLactationView: UIViewController {
         super.viewDidLoad()
         presenter?.viewDidLoad()
     }
-    func clickOnMyBaby(){
-    }
 }
 
 extension HomeLactationView: HomeLactationViewProtocol {

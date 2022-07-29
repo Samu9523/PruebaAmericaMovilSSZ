@@ -8,9 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		FC1B9799289239CB001E787A /* FormMyBabyView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC1B9798289239CB001E787A /* FormMyBabyView.storyboard */; };
+		FC1B979B289318BF001E787A /* FormMyBabyEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1B979A289318BF001E787A /* FormMyBabyEntity.swift */; };
+		FC1B979E28933C38001E787A /* PruebaAmericaMovilSSZ.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC1B979C28933C38001E787A /* PruebaAmericaMovilSSZ.xcdatamodeld */; };
+		FC1B97A1289396A9001E787A /* BabyForm+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1B979F289396A9001E787A /* BabyForm+CoreDataClass.swift */; };
+		FC1B97A2289396A9001E787A /* BabyForm+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1B97A0289396A9001E787A /* BabyForm+CoreDataProperties.swift */; };
 		FCBB64F12891AA64004664C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBB64F02891AA64004664C9 /* AppDelegate.swift */; };
 		FCBB64F32891AA64004664C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBB64F22891AA64004664C9 /* SceneDelegate.swift */; };
-		FCBB64FB2891AA64004664C9 /* PruebaAmericaMovilSSZ.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FCBB64F92891AA64004664C9 /* PruebaAmericaMovilSSZ.xcdatamodeld */; };
 		FCBB64FD2891AA65004664C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCBB64FC2891AA65004664C9 /* Assets.xcassets */; };
 		FCBB65002891AA65004664C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCBB64FE2891AA65004664C9 /* LaunchScreen.storyboard */; };
 		FCBB650E2891AC91004664C9 /* HomeLactationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBB65072891AC91004664C9 /* HomeLactationPresenter.swift */; };
@@ -28,10 +31,13 @@
 
 /* Begin PBXFileReference section */
 		FC1B9798289239CB001E787A /* FormMyBabyView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FormMyBabyView.storyboard; sourceTree = "<group>"; };
+		FC1B979A289318BF001E787A /* FormMyBabyEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormMyBabyEntity.swift; sourceTree = "<group>"; };
+		FC1B979D28933C38001E787A /* PruebaAmericaMovilSSZ.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PruebaAmericaMovilSSZ.xcdatamodel; sourceTree = "<group>"; };
+		FC1B979F289396A9001E787A /* BabyForm+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BabyForm+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FC1B97A0289396A9001E787A /* BabyForm+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BabyForm+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		FCBB64ED2891AA64004664C9 /* PruebaAmericaMovilSSZ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PruebaAmericaMovilSSZ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCBB64F02891AA64004664C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCBB64F22891AA64004664C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FCBB64FA2891AA64004664C9 /* PruebaAmericaMovilSSZ.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PruebaAmericaMovilSSZ.xcdatamodel; sourceTree = "<group>"; };
 		FCBB64FC2891AA65004664C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCBB64FF2891AA65004664C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FCBB65012891AA65004664C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -59,6 +65,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FC1B97A3289396F4001E787A /* BabyFormCoreData */ = {
+			isa = PBXGroup;
+			children = (
+				FC1B979F289396A9001E787A /* BabyForm+CoreDataClass.swift */,
+				FC1B97A0289396A9001E787A /* BabyForm+CoreDataProperties.swift */,
+			);
+			path = BabyFormCoreData;
+			sourceTree = "<group>";
+		};
 		FCBB64E42891AA64004664C9 = {
 			isa = PBXGroup;
 			children = (
@@ -80,12 +95,13 @@
 			children = (
 				FCBB65152891ACA0004664C9 /* HomeLactation */,
 				FCBB65162891ACB8004664C9 /* FormMyBaby */,
+				FC1B97A3289396F4001E787A /* BabyFormCoreData */,
 				FCBB64F02891AA64004664C9 /* AppDelegate.swift */,
 				FCBB64F22891AA64004664C9 /* SceneDelegate.swift */,
 				FCBB64FC2891AA65004664C9 /* Assets.xcassets */,
 				FCBB64FE2891AA65004664C9 /* LaunchScreen.storyboard */,
 				FCBB65012891AA65004664C9 /* Info.plist */,
-				FCBB64F92891AA64004664C9 /* PruebaAmericaMovilSSZ.xcdatamodeld */,
+				FC1B979C28933C38001E787A /* PruebaAmericaMovilSSZ.xcdatamodeld */,
 			);
 			path = PruebaAmericaMovilSSZ;
 			sourceTree = "<group>";
@@ -112,6 +128,7 @@
 				FCBB651B2891AD3F004664C9 /* FormMyBabyView.swift */,
 				FC1B9798289239CB001E787A /* FormMyBabyView.storyboard */,
 				FCBB651D2891AD3F004664C9 /* FormMyBabyWireFrame.swift */,
+				FC1B979A289318BF001E787A /* FormMyBabyEntity.swift */,
 			);
 			path = FormMyBaby;
 			sourceTree = "<group>";
@@ -189,16 +206,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCBB65102891AC91004664C9 /* HomeLactationProtocols.swift in Sources */,
+				FC1B97A1289396A9001E787A /* BabyForm+CoreDataClass.swift in Sources */,
 				FCBB65242891AD3F004664C9 /* FormMyBabyWireFrame.swift in Sources */,
 				FCBB65222891AD3F004664C9 /* FormMyBabyView.swift in Sources */,
 				FCBB65122891AC91004664C9 /* HomeLactationView.swift in Sources */,
+				FC1B979E28933C38001E787A /* PruebaAmericaMovilSSZ.xcdatamodeld in Sources */,
 				FCBB651E2891AD3F004664C9 /* FormMyBabyPresenter.swift in Sources */,
 				FCBB65202891AD3F004664C9 /* FormMyBabyProtocols.swift in Sources */,
+				FC1B979B289318BF001E787A /* FormMyBabyEntity.swift in Sources */,
 				FCBB65212891AD3F004664C9 /* FormMyBabyInteractor.swift in Sources */,
 				FCBB65112891AC91004664C9 /* HomeLactationInteractor.swift in Sources */,
+				FC1B97A2289396A9001E787A /* BabyForm+CoreDataProperties.swift in Sources */,
 				FCBB64F12891AA64004664C9 /* AppDelegate.swift in Sources */,
 				FCBB650E2891AC91004664C9 /* HomeLactationPresenter.swift in Sources */,
-				FCBB64FB2891AA64004664C9 /* PruebaAmericaMovilSSZ.xcdatamodeld in Sources */,
 				FCBB64F32891AA64004664C9 /* SceneDelegate.swift in Sources */,
 				FCBB65142891AC91004664C9 /* HomeLactationWireFrame.swift in Sources */,
 			);
@@ -410,12 +430,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		FCBB64F92891AA64004664C9 /* PruebaAmericaMovilSSZ.xcdatamodeld */ = {
+		FC1B979C28933C38001E787A /* PruebaAmericaMovilSSZ.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				FCBB64FA2891AA64004664C9 /* PruebaAmericaMovilSSZ.xcdatamodel */,
+				FC1B979D28933C38001E787A /* PruebaAmericaMovilSSZ.xcdatamodel */,
 			);
-			currentVersion = FCBB64FA2891AA64004664C9 /* PruebaAmericaMovilSSZ.xcdatamodel */;
+			currentVersion = FC1B979D28933C38001E787A /* PruebaAmericaMovilSSZ.xcdatamodel */;
 			path = PruebaAmericaMovilSSZ.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

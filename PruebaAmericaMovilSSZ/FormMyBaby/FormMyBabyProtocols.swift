@@ -12,6 +12,11 @@ import UIKit
 protocol FormMyBabyViewProtocol: AnyObject {
     // PRESENTER -> VIEW
     var presenter: FormMyBabyPresenterProtocol? { get set }
+    func uiCustomization()
+    func chooseGirl()
+    func chooseBoy()
+    func cleanButtonInfo()
+    func saveInfoBaby()
 }
 
 protocol FormMyBabyWireFrameProtocol: AnyObject {
@@ -26,6 +31,10 @@ protocol FormMyBabyPresenterProtocol: AnyObject {
     var wireFrame: FormMyBabyWireFrameProtocol? { get set }
     
     func viewDidLoad()
+    func buttonGirl()
+    func buttonBoy()
+    func cleanInfo()
+    func saveInfoBaby()
 }
 
 protocol FormMyBabyInteractorProtocol: AnyObject {
