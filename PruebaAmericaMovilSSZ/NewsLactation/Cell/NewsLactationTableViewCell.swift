@@ -18,14 +18,8 @@ class NewsLactationTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
     
-    func configure(news: Article){
+    func configureCell(news: Article){
         titleLabel.text = news.title
         descriptionLabel.text = news.articleDescription
         autorLabel.text = news.author

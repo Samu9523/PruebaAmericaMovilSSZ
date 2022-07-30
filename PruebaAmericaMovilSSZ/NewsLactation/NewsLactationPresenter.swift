@@ -22,12 +22,10 @@ extension NewsLactationPresenter: NewsLactationPresenterProtocol {
     // TODO: implement presenter methods
     func viewDidLoad() {
         interactor?.getNews()
+        view?.configureTable()
     }
     func bringNews(news: [Article]) {
         view?.showDataArticles(news: news)
-    }
-    func dataNews() {
-        
     }
 
 }

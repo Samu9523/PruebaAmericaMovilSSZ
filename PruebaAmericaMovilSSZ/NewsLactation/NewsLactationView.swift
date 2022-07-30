@@ -31,6 +31,7 @@ extension NewsLactationView: NewsLactationViewProtocol {
     func configureTable() {
         newsTableView.delegate = self
         newsTableView.dataSource = self
+        newsTableView.register(NewsLactationTableViewCell.self, forCellReuseIdentifier: NewsLactationTableViewCell.identifier)
     }
     
     func showDataArticles(news: [Article]) {
@@ -46,16 +47,15 @@ extension NewsLactationView: UITableViewDataSource, UITableViewDelegate{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return news?.count ?? 0
     }
-        
-    
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let usercell = tableView.dequeueReusableCell(withIdentifier: NewsLactationTableViewCell.identifier, for: indexPath) as? NewsLactationTableViewCell else{
-            return UITableViewCell()
+         guard let userCell = tableView.dequeueReusableCell(withIdentifier: NewsLactationTableViewCell.identifier, for: indexPath) as? NewsLactationTableViewCell else {
+            return UITableViewCell()}
+            guard let safeNotice = news?[indexPath.row] else { return UITableViewCell() }
+            userCell.configureCell(news: safeNotice)
+            return userCell
         }
-        return usercell
-    }
-    
+
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
     }
