@@ -13,7 +13,7 @@ class NewsLactationInteractor: NewsLactationInteractorProtocol {
     
     func getNews(){
         
-        let urlString = "https://newsapi.org/v2/everything?q=lactation&from=2022-07-01&sortBy=publishedAt&apiKey=71fb5269d8104aec9390c63dd7dc3bd2"
+        let urlString = "https://newsapi.org/v2/everything?q=lactation&from=2022-07-01&sortBy=publishedAt&apiKey=7d97a74f6be24295a78eedd644a7130b"
         let url = URL(string: urlString)
         var request = URLRequest(url: url!)
         request.httpMethod = "GET"
