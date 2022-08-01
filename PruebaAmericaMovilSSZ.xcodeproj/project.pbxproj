@@ -138,7 +138,6 @@
 				FCBB65152891ACA0004664C9 /* HomeLactation */,
 				FCBB65162891ACB8004664C9 /* FormMyBaby */,
 				FC1B97A72893E28B001E787A /* NewsLactation */,
-				FC1B97A3289396F4001E787A /* BabyFormCoreData */,
 				FCBB64F02891AA64004664C9 /* AppDelegate.swift */,
 				FCBB64F22891AA64004664C9 /* SceneDelegate.swift */,
 				FCBB64FC2891AA65004664C9 /* Assets.xcassets */,
@@ -172,6 +171,7 @@
 				FC1B9798289239CB001E787A /* FormMyBabyView.storyboard */,
 				FCBB651D2891AD3F004664C9 /* FormMyBabyWireFrame.swift */,
 				FC1B979A289318BF001E787A /* FormMyBabyEntity.swift */,
+				FC1B97A3289396F4001E787A /* BabyFormCoreData */,
 			);
 			path = FormMyBaby;
 			sourceTree = "<group>";

@@ -9,10 +9,14 @@ import UIKit
 
 class NewsLactationTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var descriptionLabel: UILabel!
-    @IBOutlet weak var autorLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel?
+    @IBOutlet weak var descriptionLabel: UILabel?
+    @IBOutlet weak var urlLabel: UILabel!
     
+    
+    var titleNews: String?
+    var contentNews: String?
+    var urlNotice: String?
     static let identifier = "NewsLactationTableViewCell"
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -20,9 +24,11 @@ class NewsLactationTableViewCell: UITableViewCell {
     }
     
     func configureCell(news: Article){
-        titleLabel.text = news.title
-        descriptionLabel.text = news.articleDescription
-        autorLabel.text = news.author
+        titleNews = news.title == nil ? "Sin Título" : news.title
+        titleLabel?.text = titleNews
+        contentNews = news.content == nil ? "Sin contenido" : news.content
+        descriptionLabel?.text = contentNews
+        urlNotice = news.url == nil ? "Sin url" : news.url
+        urlLabel.text = urlNotice
     }
-    
 }

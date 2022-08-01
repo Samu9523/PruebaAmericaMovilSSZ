@@ -8,27 +8,27 @@ import Foundation
 
 // MARK: - Welcome
 struct Welcome: Codable {
-    var status: String? = nil
-    var totalResults: Int? = nil
-    var articles: [Article]? = nil
+    var status: String?
+    var totalResults: Int?
+    var articles: [Article]
 }
 
 // MARK: - Article
 struct Article: Codable {
-    var source: Source? = nil
-    var author: String? = nil
-    var title: String? = nil
-    var articleDescription: String? = nil
-    var url: String? = nil
-    var urlToImage: String? = nil
-    var publishedAt: Date? = nil
-    var content: String? = nil
+    var source: Source? 
+    var author: String?
+    var title: String?
+    var articleDescription: String?
+    var url: String?
+    var urlToImage: String?
+    var publishedAt: Date?
+    var content: String?
 }
 
 // MARK: - Source
 struct Source: Codable {
-    var id: String? = nil
-    var name: String? = nil
+    var id: String?
+    var name: String? 
 }
 
 

@@ -18,7 +18,7 @@ class NewsLactationPresenter  {
 }
 
 extension NewsLactationPresenter: NewsLactationPresenterProtocol {
-        
+   
     // TODO: implement presenter methods
     func viewDidLoad() {
         interactor?.getNews()
@@ -27,5 +27,4 @@ extension NewsLactationPresenter: NewsLactationPresenterProtocol {
     func bringNews(news: [Article]) {
         view?.showDataArticles(news: news)
     }
-
 }

@@ -8,15 +8,16 @@
 
 import Foundation
 import UIKit
+import SafariServices
 
 class NewsLactationView: UIViewController {
-
+    
     @IBOutlet weak var newsTableView: UITableView!
     // MARK: Properties
     var presenter: NewsLactationPresenterProtocol?
     var news: [Article]?
     // MARK: Lifecycle
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter?.viewDidLoad()
@@ -29,9 +30,10 @@ extension NewsLactationView: NewsLactationViewProtocol {
     }
     
     func configureTable() {
+        newsTableView.separatorColor = .gray
         newsTableView.delegate = self
         newsTableView.dataSource = self
-        newsTableView.register(NewsLactationTableViewCell.self, forCellReuseIdentifier: NewsLactationTableViewCell.identifier)
+        newsTableView.register(UINib(nibName: NewsLactationTableViewCell.identifier, bundle: nil),  forCellReuseIdentifier: NewsLactationTableViewCell.identifier)
     }
     
     func showDataArticles(news: [Article]) {
@@ -43,21 +45,24 @@ extension NewsLactationView: NewsLactationViewProtocol {
     
     // TODO: implement view output methods
 }
-extension NewsLactationView: UITableViewDataSource, UITableViewDelegate{
+extension NewsLactationView: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return news?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-         guard let userCell = tableView.dequeueReusableCell(withIdentifier: NewsLactationTableViewCell.identifier, for: indexPath) as? NewsLactationTableViewCell else {
-            return UITableViewCell()}
-            guard let safeNotice = news?[indexPath.row] else { return UITableViewCell() }
-            userCell.configureCell(news: safeNotice)
-            return userCell
-        }
-
+        guard let userCell = tableView.dequeueReusableCell(withIdentifier: NewsLactationTableViewCell.identifier, for: indexPath) as? NewsLactationTableViewCell else { return UITableViewCell() }
+        guard let safeNotice = news?[indexPath.row] else { return UITableViewCell() }
+        userCell.configureCell(news: safeNotice)
+        return userCell
+    }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-
+        guard let safeNotice = news?[indexPath.row].url else { return }
+        print("‼️esta es la url \(safeNotice)‼️")
+        if let url = URL(string: safeNotice) {
+            UIApplication.shared.open(url)
+        }
     }
     
 }
+

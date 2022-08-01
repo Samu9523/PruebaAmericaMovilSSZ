@@ -30,6 +30,7 @@ protocol NewsLactationPresenterProtocol: AnyObject {
     var wireFrame: NewsLactationWireFrameProtocol? { get set }
     func viewDidLoad()
     func bringNews(news: [Article])
+
 }
 
 protocol NewsLactationInteractorProtocol: AnyObject {

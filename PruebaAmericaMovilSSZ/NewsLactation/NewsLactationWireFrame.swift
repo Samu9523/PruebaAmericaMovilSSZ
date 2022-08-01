@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 class NewsLactationWireFrame: NewsLactationWireFrameProtocol {
-
+    
     class func createNewsLactationModule() -> UIViewController {
         let viewController = mainStoryboard.instantiateViewController(withIdentifier: "NewsLactationView")
         if let view = viewController as? NewsLactationView {
